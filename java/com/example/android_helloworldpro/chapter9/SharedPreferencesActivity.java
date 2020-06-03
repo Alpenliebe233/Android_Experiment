@@ -31,7 +31,7 @@ public class SharedPreferencesActivity extends AppCompatActivity {
     public void write(View view) {
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy年MM月dd日 hh：mm：ss");
         editor.putString("time",sdf.format(new Date()));
-        editor.putInt("random", (int) (Math.random()*100));
+        editor.putInt("random", (int) (Math.random()*100));//注释
         editor.commit();
     }
 
